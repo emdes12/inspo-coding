@@ -1,5 +1,5 @@
 <script setup>
-import Gong from '@/assets/img.svg'
+import Gong from '@/assets/Img.svg'
 import Header from './Header.vue'
 </script>
 
