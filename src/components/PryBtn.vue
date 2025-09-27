@@ -16,10 +16,24 @@ defineProps({
     default: '#fff',
     required: false,
   },
+  notActive: {
+    type: Boolean,
+    default: false,
+    required: false,
+  },
+  isLeft: {
+    type: Boolean,
+    default: false,
+    required: false,
+  },
 })
 </script>
 <template>
-  <button class="with-text" v-if="txt" :style="{ color: BtnColor, borderColor: BtnColor }">
+  <button
+    class="with-text"
+    v-if="txt && !notActive"
+    :style="{ color: BtnColor, borderColor: BtnColor }"
+  >
     {{ txt }}
     <svg
       v-if="isIcon"
@@ -36,7 +50,53 @@ defineProps({
       />
     </svg>
   </button>
-  <button class="without-text" v-if="!txt" :style="{ color: BtnColor, borderColor: BtnColor }">
+  <button
+    class="without-text"
+    v-if="!txt && !notActive"
+    :style="{ color: BtnColor, borderColor: BtnColor }"
+  >
+    <!-- {{ txt }} -->
+    <svg
+      v-if="isIcon"
+      width="25"
+      height="25"
+      viewBox="0 0 25 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M13.909 2.62L23.1701 12.3333L13.909 21.82M1.42896 12.22H22.549"
+        :stroke="BtnColor"
+        stroke-width="1.92"
+      />
+    </svg>
+  </button>
+  <button
+    class="without-text"
+    v-if="!txt && notActive && !isLeft"
+    :style="{ color: BtnColor, borderColor: BtnColor, opacity: '40%' }"
+  >
+    <!-- {{ txt }} -->
+    <svg
+      v-if="isIcon"
+      width="25"
+      height="25"
+      viewBox="0 0 25 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M13.909 2.62L23.1701 12.3333L13.909 21.82M1.42896 12.22H22.549"
+        :stroke="BtnColor"
+        stroke-width="1.92"
+      />
+    </svg>
+  </button>
+  <button
+    class="without-text"
+    v-if="!txt && notActive && isLeft"
+    :style="{ color: BtnColor, borderColor: BtnColor, transform: 'rotate(180deg)', opacity: '40%' }"
+  >
     <!-- {{ txt }} -->
     <svg
       v-if="isIcon"

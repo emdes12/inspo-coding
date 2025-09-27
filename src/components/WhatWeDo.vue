@@ -37,19 +37,17 @@ import PROGRAMS from '@/assets/PROGRAMS.png'
             <PryBtn txt="Find out more" BtnColor="#fff" :isIcon="true" />
           </div>
         </div>
-
-        <div class="hidden">
-          <div class="blue"></div>
-          <div class="black"></div>
-        </div>
       </div>
+    </div>
+    <div class="hidden">
+      <div class="blue"></div>
+      <div class="black"></div>
     </div>
   </section>
 </template>
 <style scoped>
 section {
   width: 100%;
-  padding: 60px 30px 60px;
 }
 
 .head {
@@ -60,6 +58,10 @@ section {
   flex-direction: column;
   gap: 19px;
   margin-bottom: 40px;
+}
+
+.container > div {
+  padding: 60px 30px 60px;
 }
 
 .flex {

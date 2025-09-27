@@ -45,13 +45,20 @@ import quote from '@/assets/quote.svg'
         </div>
       </div>
     </div>
+    <div class="hidden">
+      <div class="cyan"></div>
+      <div class="blue"></div>
+    </div>
   </section>
 </template>
 <style scoped>
 section {
   width: 100%;
-  padding: 60px 30px 60px;
   background-color: #0026df;
+}
+
+.container > div {
+  padding: 60px 30px 60px;
 }
 
 .head {
@@ -76,16 +83,16 @@ section {
   margin: 0 auto;
 }
 
-.blue {
+.cyan {
   height: 100px;
   width: 480px;
-  background-color: #0026df;
+  background-color: #4dced4;
 }
 
-.black {
+.blue {
   height: 100px;
   flex: 1;
-  background-color: #000;
+  background-color: #0026df;
 }
 
 h3 {
