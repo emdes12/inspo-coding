@@ -6,6 +6,8 @@ import GridCards from './components/GridCards.vue'
 import WhatWeDo from './components/WhatWeDo.vue'
 import AboutUs from './components/AboutUs.vue'
 import Events from './components/Events.vue'
+import Contacts from './components/Contacts.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -16,6 +18,8 @@ import Events from './components/Events.vue'
   <WhatWeDo />
   <AboutUs />
   <Events />
+  <Contacts />
+  <Footer />
 </template>
 
 <style scoped></style>

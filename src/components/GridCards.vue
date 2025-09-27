@@ -128,7 +128,7 @@ import PryBtn from './PryBtn.vue'
 <style scoped>
 section {
   width: 100%;
-  background-color: #000;
+  background-color: #fff;
   padding: 0 10px 60px;
 }
 .flex {

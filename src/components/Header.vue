@@ -1,13 +1,13 @@
 <script setup>
-import logo from '@/assets/Link - home.svg'
 import MenuIcon from '@/assets/BtnImage.svg'
 import PryBtn from './PryBtn.vue'
+import Logo from './Logo.vue'
 </script>
 <template>
   <header>
     <div class="container">
       <div class="head">
-        <img :src="logo" class="logo" alt="logo" />
+        <Logo />
         <nav>
           <ul>
             <li>Consulting</li>
@@ -24,10 +24,6 @@ import PryBtn from './PryBtn.vue'
   </header>
 </template>
 <style scoped>
-.logo {
-  width: 140px;
-}
-
 header {
   background-color: var(--background-blue);
 }
@@ -56,10 +52,6 @@ nav {
 }
 
 @media (min-width: 750px) {
-  .logo {
-    width: 210px;
-  }
-
   nav {
     display: flex;
   }
