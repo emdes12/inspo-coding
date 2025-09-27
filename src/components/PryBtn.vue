@@ -1,0 +1,102 @@
+<script setup>
+import Arrow from '@/assets/SVG (1).svg'
+
+defineProps({
+  txt: {
+    type: String,
+    required: true,
+  },
+  isIcon: {
+    type: Boolean,
+    required: false,
+    default: false,
+  },
+  BtnColor: {
+    type: String,
+    default: '#fff',
+    required: false,
+  },
+})
+</script>
+<template>
+  <button class="with-text" v-if="txt" :style="{ color: BtnColor, borderColor: BtnColor }">
+    {{ txt }}
+    <svg
+      v-if="isIcon"
+      width="25"
+      height="25"
+      viewBox="0 0 25 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M13.909 2.62L23.1701 12.3333L13.909 21.82M1.42896 12.22H22.549"
+        :stroke="BtnColor"
+        stroke-width="1.92"
+      />
+    </svg>
+  </button>
+  <button class="without-text" v-if="!txt" :style="{ color: BtnColor, borderColor: BtnColor }">
+    <!-- {{ txt }} -->
+    <svg
+      v-if="isIcon"
+      width="25"
+      height="25"
+      viewBox="0 0 25 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M13.909 2.62L23.1701 12.3333L13.909 21.82M1.42896 12.22H22.549"
+        :stroke="BtnColor"
+        stroke-width="1.92"
+      />
+    </svg>
+  </button>
+</template>
+<style scoped>
+.with-text {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 13px 23px;
+  color: #fff;
+  font-weight: 300;
+  border-radius: 96px;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 19.5px;
+  letter-spacing: 0.13px;
+}
+
+.without-text {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 750px) {
+  .without-text {
+    width: 60px;
+    height: 60px;
+  }
+}
+</style>
