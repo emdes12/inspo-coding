@@ -121,13 +121,14 @@ img {
   padding-bottom: 70px;
 }
 
+@media (min-width: 1000px) {
+  .hidden {
+    display: flex;
+  }
+}
 @media (min-width: 750px) {
   .trustee {
     gap: 100px;
-  }
-
-  .hidden {
-    display: flex;
   }
 
   h3 {

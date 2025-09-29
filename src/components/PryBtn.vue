@@ -148,9 +148,37 @@ defineProps({
   color: #fff;
 }
 
-img {
+svg {
+  transition: all 0.5s ease-in-out;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
   width: 24px;
   height: 24px;
+}
+
+button:hover {
+  background-color: #0000005d;
+}
+
+button:hover svg {
+  animation: swing 1s ease-in-out infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform: translateX(5px);
+    color: red;
+  }
+
+  100% {
+    transform: translateX(-5px);
+    color: chocolate;
+  }
 }
 
 @media (min-width: 750px) {

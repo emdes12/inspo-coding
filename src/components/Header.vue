@@ -51,7 +51,7 @@ nav {
   justify-content: center;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 850px) {
   nav {
     display: flex;
   }

@@ -127,8 +127,7 @@ section {
 img {
   display: none;
 }
-
-@media (min-width: 750px) {
+@media (min-width: 1000px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -136,7 +135,9 @@ img {
   img {
     display: flex;
   }
+}
 
+@media (min-width: 750px) {
   .contact-sect {
     padding: 64px;
   }

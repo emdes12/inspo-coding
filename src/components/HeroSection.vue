@@ -94,7 +94,7 @@ span {
   padding-bottom: 42px;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 900px) {
   .hero-section {
     width: 100%;
     display: flex;

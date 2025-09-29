@@ -38,8 +38,36 @@ defineProps({
   letter-spacing: 0.13px;
 }
 
-img {
+svg {
   width: 24px;
   height: 24px;
+}
+
+svg {
+  transition: all 0.5s ease-in-out;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0000005d;
+}
+
+button:hover svg {
+  animation: swing 1s ease-in-out infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform: translateX(5px);
+    color: red;
+  }
+
+  100% {
+    transform: translateX(-5px);
+    color: chocolate;
+  }
 }
 </style>

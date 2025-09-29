@@ -189,7 +189,7 @@ h2 {
   color: #ff58f9;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 850px) {
   h3 {
     font-size: 52px;
     line-height: 52px;
