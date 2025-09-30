@@ -126,6 +126,8 @@ section {
 
 img {
   display: none;
+  object-fit: cover;
+  object-position: center;
 }
 @media (min-width: 1000px) {
   .grid {
