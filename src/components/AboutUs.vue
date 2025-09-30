@@ -117,7 +117,7 @@ h4 {
 
 .card {
   flex: 1;
-  min-width: 340px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -109,7 +109,7 @@ h4 {
 
 .card {
   flex: 1;
-  min-width: 340px;
+  min-width: 200px;
   max-width: 550px;
   display: flex;
   flex-direction: column;
