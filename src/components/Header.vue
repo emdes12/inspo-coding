@@ -36,7 +36,7 @@ header {
 }
 
 .menu-icon {
-  width: 100px;
+  width: 60px;
   margin-right: -20px;
 }
 
